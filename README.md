@@ -32,14 +32,14 @@ I configured AWS Glue Crawler to automatically detect new data files in S3 and u
 2. Final codes are in respective folders for producer and consumer and also the cli commands to create kafka server and test it.
 3. All related screenshots are in screenshots folder.
 
-#### Bucket to store data and crawler runned on this bucket's stored data to build glue catalog to run queries on athena :
+### Bucket to store data and crawler runned on this bucket's stored data to build glue catalog to run queries on athena :
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(31).png)
 
-#### Testing the kafka server , broker, producer and consumer :
+### Testing the kafka server , broker, producer and consumer :
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(32).png)
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(30).png)
 
-#### Each second the data getting updated which satisfies our goal to build real time pipeline : 
+### Each second the data getting updated which satisfies our goal to build real time pipeline : 
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(35).png)
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(38).png)
 ![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/7f60844479ee4d6dd47b8e6722f292c382387f95/Stock%20Market%20Data%20Engineering%20Project/Screenshots/Screenshot%20(39).png)
