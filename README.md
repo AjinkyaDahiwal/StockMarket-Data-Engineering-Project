@@ -1,1 +1,33 @@
-# StockMarket-Data-Engineering-Project
+# Stock Market Real-Time Data Analysis Using Kafka
+This project demonstrates my journey in building an end-to-end real-time data engineering pipeline that processes stock market data using Apache Kafka and AWS services. I developed this system to understand streaming data architectures and gain hands-on experience with modern data engineering tools.
+
+## Project Overview
+I built a complete data pipeline that simulates real-time stock market feeds, processes them through Kafka, stores them in AWS S3, and enables SQL-based analytics. The entire system handles thousands of events per minute and provides sub-second query responses.
+
+## Why I Built This Project
+As a data engineering student, I wanted to understand how financial companies handle real-time data streams. Stock market data is perfect for this because it's high-frequency, time-sensitive, and requires reliable processing. This project helped me learn industry-standard tools like Kafka while working with realistic financial data scenarios.
+
+##Technical Architecture
+My pipeline follows this flow:
+![Image Alt](image_url)
+
+Data Source: Python script that reads historical stock data and simulates live market feeds
+
+Stream Processing: Apache Kafka cluster running on AWS EC2 for reliable message handling
+
+Storage: Amazon S3 as the data lake for all processed records
+
+Schema Management: AWS Glue Crawler for automatic table creation and updates
+
+Analytics: Amazon Athena for serverless SQL queries
+
+### Stream Processing
+My producer application converts stock data to JSON and publishes to Kafka topics. The consumer application subscribes to these topics, batches the messages, and writes them to S3 in an organized folder structure partitioned by date.
+
+### Data Lake and Analytics
+I configured AWS Glue Crawler to automatically detect new data files in S3 and update the schema in the Glue Data Catalog. This enables analysts to query the data using standard SQL through Amazon Athena without managing any infrastructure.
+
+### Note :
+To not incurr any charges I stopped all the aws services after use.
+Final codes are in respective folders for producer and consumer and also the cli commands to create kafka server and test it.
+All related screenshots are in sccreenshots folder.
