@@ -7,9 +7,9 @@ I built a complete data pipeline that simulates real-time stock market feeds, pr
 ## Why I Built This Project
 As a data engineering student, I wanted to understand how financial companies handle real-time data streams. Stock market data is perfect for this because it's high-frequency, time-sensitive, and requires reliable processing. This project helped me learn industry-standard tools like Kafka while working with realistic financial data scenarios.
 
-##Technical Architecture
+## Technical Architecture
 My pipeline follows this flow:
-![Image Alt](image_url)
+![Image Alt](https://github.com/AjinkyaDahiwal/StockMarket-Data-Engineering-Project/blob/8027179a6ee1f2c91eb586556d5f3f53bb45f168/Stock%20Market%20Data%20Engineering%20Project/Architecture/Architecture.jpg)
 
 Data Source: Python script that reads historical stock data and simulates live market feeds
 
