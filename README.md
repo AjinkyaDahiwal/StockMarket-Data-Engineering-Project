@@ -28,6 +28,17 @@ My producer application converts stock data to JSON and publishes to Kafka topic
 I configured AWS Glue Crawler to automatically detect new data files in S3 and update the schema in the Glue Data Catalog. This enables analysts to query the data using standard SQL through Amazon Athena without managing any infrastructure.
 
 ### Note :
-To not incurr any charges I stopped all the aws services after use.
-Final codes are in respective folders for producer and consumer and also the cli commands to create kafka server and test it.
-All related screenshots are in sccreenshots folder.
+1. To not incurr any charges I stopped all the aws services after use.
+2. Final codes are in respective folders for producer and consumer and also the cli commands to create kafka server and test it.
+3. All related screenshots are in screenshots folder.
+
+#### Bucket to store data and crawler runned on this bucket's stored data to build glue catalog to run queries on athena :
+![Image Alt](image_url)
+
+#### Testing the kafka server , broker, producer and consumer :
+![Image Alt](image_url)
+
+#### Each second the data getting updated which satisfies our goal to build real time pipeline : 
+![Image Alt](image_url)
+![Image Alt](image_url)
+![Image Alt](image_url)
